@@ -1,0 +1,190 @@
+#games {
+    .sliderArea {
+       .rowBox {
+           overflow: hidden;
+       }
+        .gBox {
+            position: relative;
+            overflow: hidden;
+            width: 48%;
+            img {
+                max-width: 98%;
+            }
+            .infoOverlay {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                background: $bg;
+                border-radius: 7px;
+                padding: 15px;
+                opacity: 0.95;
+                transform: translateY(100%);
+                transition: all 0.3s;
+                h4 {
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                }
+                p {
+                    font-size: 14px;
+                }
+                a {
+                    padding: 5px 25px;
+                    font-size: 14px;
+                }
+            }
+            &:hover {
+                .infoOverlay {
+                    transform: translateY(0);
+                }
+            }
+        }
+        .smallBox {
+            width: 23.4%;
+            margin-bottom: 10px;
+            .infoOverlay {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                top: 0;
+                border-radius: 0;
+            }
+        }
+        .rightBoxes > .row {
+            & > .col-6 {
+                &:last-of-type,
+                &:nth-of-type(3) {
+                    display: flex;
+                    align-items: flex-end;
+                }
+            }
+        }
+        .owl-nav {
+            display: flex;
+            justify-content: center;
+            button {
+                position: absolute;
+                top: calc(50% - 45px);
+                width: 40px;
+                height: 40px;
+                border-radius: 14px;
+                background-color: #e8ebf3;
+                i {
+                    font-size: 18px;
+                    color: $text;
+                }
+                &.owl-prev {
+                    left: -65px;
+                }
+                &.owl-next {
+                    right: -65px;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+#aboutUs {
+    background-image: url("./../img/text-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    p {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+#contactUs {
+    background: $bg;
+    h3 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    .formArea {
+        padding-top: 20px;
+        .form-control {
+            background: $input;
+            border-radius: 10px;
+            &:focus {
+                box-shadow: none;
+                border-color: $main;
+            }
+        }
+        input {
+            height: 48px;
+        }
+    }
+    .contactArea {
+        height: 100%;
+        background: $main;
+        border-radius: 10px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            padding: 50px;
+            li {
+                color: white;
+                margin: 10px 0;
+                i {
+                    font-size: 18px;
+                    margin-right: 10px;
+                    &.fa-phone {
+                        transform: rotateZ(90deg);
+                    }
+                    &.fa-location-arrow {
+                        transform: rotateZ(-90deg);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1080px) {
+    #games {
+        .sliderArea {
+            .owl-nav {
+                button {
+                    position: initial;
+                    margin: 20px 10px 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    header {
+        .navbar-nav {
+            text-align: center;
+            li a {
+                border: none;
+            }
+        }
+        form {
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 576px) {
+    footer {
+        .firstFooter .menuList ul{
+            flex-direction: column;
+            align-items: center;
+            li a{
+                border: none;
+            }
+        }
+    }
+}

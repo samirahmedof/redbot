@@ -1,0 +1,438 @@
+@font-face {
+  font-family: "Comfortaa Regular";
+  src: url(../webfonts/Comfortaa-SemiBold.ttf);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+body {
+  color: #4d4d4d;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #4d4d4d;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+section {
+  padding: 30px 0;
+  margin: 30px 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px #ea391a;
+          box-shadow: inset 0 0 5px #ea391a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ee6149;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bf2b12;
+}
+
+.rBtn {
+  border-radius: 10px;
+  padding: 7px 35px;
+  color: white;
+  background: #ea391a;
+}
+
+.rBtn:hover {
+  color: white;
+}
+
+header {
+  background: #f4f6fa;
+  border-bottom: 5px solid #ea391a;
+}
+
+header nav .navbar-brand img {
+  width: 140px;
+}
+
+header nav .navbar-collapse a i {
+  font-size: 18px;
+  color: #4d4d4d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header nav .navbar-collapse a:hover i {
+  color: #ea391a;
+}
+
+footer .firstFooter {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+footer .firstFooter .menuList ul {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .firstFooter .socials ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer .firstFooter .socials ul li a {
+  color: #ea391a;
+  font-size: 18px;
+}
+
+footer .secondFooter {
+  padding: 10px 0;
+  background: #4d4d4d;
+}
+
+footer .secondFooter span {
+  color: #ffffff;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.searchModal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  opacity: 0.95;
+  background: #ea391a;
+  display: none;
+}
+
+.searchModal .searchContent {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searchModal .searchContent .closeModal {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.searchModal .searchContent .closeModal i {
+  font-size: 30px;
+  color: white;
+}
+
+.searchModal .searchContent .inputArea {
+  width: 70%;
+  text-align: center;
+}
+
+.searchModal .searchContent .inputArea input {
+  height: 46px;
+  border-radius: 10px;
+}
+
+.searchModal .searchContent .inputArea input:focus {
+  border: none;
+  -webkit-box-shadow: 0px 0px 5px 5px #ffffff42;
+          box-shadow: 0px 0px 5px 5px #ffffff42;
+}
+
+.searchModal .searchContent .inputArea button {
+  color: white;
+  margin-top: 20px;
+  border: 1px solid;
+}
+
+.searchModal .searchContent .inputArea button i {
+  font-size: 20px;
+}
+
+ul.navbar-nav li a {
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-right: 1px solid #ea391a;
+  padding: 0 35px !important;
+}
+
+ul.navbar-nav li a:hover {
+  color: #ea391a !important;
+}
+
+ul.navbar-nav li:last-of-type a {
+  border: none;
+}
+
+#games .sliderArea .rowBox {
+  overflow: hidden;
+}
+
+#games .sliderArea .gBox {
+  position: relative;
+  overflow: hidden;
+  width: 48%;
+}
+
+#games .sliderArea .gBox img {
+  max-width: 98%;
+}
+
+#games .sliderArea .gBox .infoOverlay {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: #f4f6fa;
+  border-radius: 7px;
+  padding: 15px;
+  opacity: 0.95;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#games .sliderArea .gBox .infoOverlay h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+#games .sliderArea .gBox .infoOverlay p {
+  font-size: 14px;
+}
+
+#games .sliderArea .gBox .infoOverlay a {
+  padding: 5px 25px;
+  font-size: 14px;
+}
+
+#games .sliderArea .gBox:hover .infoOverlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#games .sliderArea .smallBox {
+  width: 23.4%;
+  margin-bottom: 10px;
+}
+
+#games .sliderArea .smallBox .infoOverlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 0;
+  border-radius: 0;
+}
+
+#games .sliderArea .rightBoxes > .row > .col-6:last-of-type, #games .sliderArea .rightBoxes > .row > .col-6:nth-of-type(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#games .sliderArea .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#games .sliderArea .owl-nav button {
+  position: absolute;
+  top: calc(50% - 45px);
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background-color: #e8ebf3;
+}
+
+#games .sliderArea .owl-nav button i {
+  font-size: 18px;
+  color: #4d4d4d;
+}
+
+#games .sliderArea .owl-nav button.owl-prev {
+  left: -65px;
+}
+
+#games .sliderArea .owl-nav button.owl-next {
+  right: -65px;
+}
+
+#games .sliderArea .owl-nav button:focus {
+  outline: none;
+}
+
+#aboutUs {
+  background-image: url("./../img/text-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#aboutUs h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#aboutUs p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#contactUs {
+  background: #f4f6fa;
+}
+
+#contactUs h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+#contactUs .formArea {
+  padding-top: 20px;
+}
+
+#contactUs .formArea .form-control {
+  background: #e8ebf3;
+  border-radius: 10px;
+}
+
+#contactUs .formArea .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #ea391a;
+}
+
+#contactUs .formArea input {
+  height: 48px;
+}
+
+#contactUs .contactArea {
+  height: 100%;
+  background: #ea391a;
+  border-radius: 10px;
+}
+
+#contactUs .contactArea ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+
+#contactUs .contactArea ul li {
+  color: white;
+  margin: 10px 0;
+}
+
+#contactUs .contactArea ul li i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+#contactUs .contactArea ul li i.fa-phone {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+#contactUs .contactArea ul li i.fa-location-arrow {
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+
+@media (max-width: 1080px) {
+  #games .sliderArea .owl-nav button {
+    position: initial;
+    margin: 20px 10px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  header .navbar-nav {
+    text-align: center;
+  }
+  header .navbar-nav li a {
+    border: none;
+  }
+  header form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .firstFooter .menuList ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .firstFooter .menuList ul li a {
+    border: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
